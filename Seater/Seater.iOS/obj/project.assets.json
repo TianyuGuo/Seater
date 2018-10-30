@@ -724,11 +724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guoti\\source\\repos\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
       "projectName": "Seater.iOS",
-      "projectPath": "C:\\Users\\guoti\\source\\repos\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
+      "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
       "packagesPath": "C:\\Users\\guoti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guoti\\source\\repos\\Seater\\Seater\\Seater.iOS\\obj\\",
+      "outputPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -746,8 +746,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\guoti\\source\\repos\\Seater\\Seater\\Seater\\Seater.csproj": {
-              "projectPath": "C:\\Users\\guoti\\source\\repos\\Seater\\Seater\\Seater\\Seater.csproj"
+            "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj": {
+              "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj"
             }
           }
         }
