@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Seater"
+             x:Class="Seater.MainPage">
+
+    <StackLayout>
+        <Label Text="Thank you for choosing the Seater!" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+        <Button Text="Get into the app!"
+                Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

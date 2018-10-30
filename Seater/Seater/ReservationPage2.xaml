@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Seater.ReservationPage2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Your Reservation Information" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Your Reservation has been cancelled!" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Search more restaurant" Clicked="Button_Clicked"/>
+            <StackLayout VerticalOptions="EndAndExpand"
+                         BackgroundColor="LightGray">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Search"
+                            BackgroundColor="LightGray" />
+                    <Button Text="Reservation"
+                            BackgroundColor="LightGray" />
+                    <Button Text="Profile"
+                            BackgroundColor="LightGray" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

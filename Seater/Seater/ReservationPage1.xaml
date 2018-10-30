@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Seater.ReservationPage1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="white" Margin="10,10,10,0">
+            <Button Text="Back" VerticalOptions="Start" HorizontalOptions="Start"></Button>
+            <Label Text="My Reservation"
+                   TextColor="Black"
+                   FontSize="24"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand" />
+            <Label Text="Sushi King"
+                   TextColor="Black"
+                   FontSize="22"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand"/>
+            <Grid>
+                <Image Source="sushi.jpg" WidthRequest="100" HeightRequest="80" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Your waiting number is 11. 
+                       There are 10 customers ahead of you.
+                       Estimated waiting time 40 minutes." Grid.Row="0" Grid.Column="1" TextColor="Red" VerticalOptions="Center"/>
+            </Grid>
+            <Button Text="Reschedule"/>
+            <Button Text="Cancel"/>
+
+            <StackLayout VerticalOptions="EndAndExpand"
+                         BackgroundColor="LightGray">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Search"
+                            BackgroundColor="LightGray" />
+                    <Button Text="Reservation"
+                            BackgroundColor="LightGray" />
+                    <Button Text="Profile"
+                            BackgroundColor="LightGray" />
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

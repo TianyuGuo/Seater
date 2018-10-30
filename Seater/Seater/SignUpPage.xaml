@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Seater.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Seater" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Entry Text="Account:" VerticalOptions="CenterAndExpand"/>
+            <Entry Text="Password:" VerticalOptions="CenterAndExpand" />
+            <Entry Text="Name:" VerticalOptions="CenterAndExpand" />
+            <Entry Text="Phone#:" VerticalOptions="CenterAndExpand" />
+            <Entry Text="Address:" VerticalOptions="CenterAndExpand" />
+            <Entry Text="Security Question:" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Create an account" Clicked="Button_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout VerticalOptions="EndAndExpand"
+                         BackgroundColor="LightGray">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Search"
+                            BackgroundColor="LightGray" />
+                    <Button Text="Reservation"
+                            BackgroundColor="LightGray" />
+                    <Button Text="Profile"
+                            BackgroundColor="LightGray" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

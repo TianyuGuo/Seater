@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Seater.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,0">
+            <Label Text="Seater" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Entry Placeholder="Account"/>
+            <Entry Placeholder="Password"/>
+            <Button Text="Login" Grid.Row="0" Grid.Column="0"
+                    Clicked="Button_Clicked"/>
+            <Button Text="Sign Up" Grid.Row="0" Grid.Column="1"
+                    Clicked="Button_Clicked_1"/>
+            <Button Text="Forgot the password" StyleClass="Link" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                    Clicked="Button_Clicked_5"/>
+            <Button Text="Skip and continue as a guest" StyleClass="Link" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked_2"/>
+            <Button Text="Login with Google Account" StyleClass="Link" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked_3"/>
+            <Button Text="Login with Facebook Account" StyleClass="Link" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked_4"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
