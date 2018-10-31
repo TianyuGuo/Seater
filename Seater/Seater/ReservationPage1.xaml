@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Seater.ReservationPage1">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout BackgroundColor="white" Margin="10,10,10,0">
             <Button Text="Back" VerticalOptions="Start" HorizontalOptions="Start"></Button>
             <Label Text="My Reservation"
@@ -22,20 +23,23 @@
                        Estimated waiting time 40 minutes." Grid.Row="0" Grid.Column="1" TextColor="Red" VerticalOptions="Center"/>
             </Grid>
             <Button Text="Reschedule"/>
-            <Button Text="Cancel"/>
+            <Button Text="Cancel" Clicked="Button_Clicked"/>
 
-            <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray">
-                <StackLayout Orientation="Horizontal">
+                <StackLayout VerticalOptions="EndAndExpand"
+                         BackgroundColor="LightGray"
+                             Orientation="Horizontal">
                     <Button Text="Search"
-                            BackgroundColor="LightGray" />
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_search"/>
                     <Button Text="Reservation"
-                            BackgroundColor="LightGray" />
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_reserve"/>
                     <Button Text="Profile"
-                            BackgroundColor="LightGray" />
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_profile"/>
                 </StackLayout>
-            </StackLayout>
 
-        </StackLayout>
+            </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

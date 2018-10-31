@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Seater"
+             xmlns:colosseum="clr-namespace:Seater;assembly=Seater"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
              x:Class="Seater.MainPage">
+    
+    <colosseum:ReservationPage1 Icon="reserve.png"></colosseum:ReservationPage1>
+    <colosseum:ProfilePage Icon="profile.png"></colosseum:ProfilePage>
 
-    <StackLayout>
-        <Label Text="Thank you for choosing the Seater!" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
-        <Button Text="Get into the app!"
-                Clicked="Button_Clicked"/>
-    </StackLayout>
 
-</ContentPage>
+</TabbedPage>

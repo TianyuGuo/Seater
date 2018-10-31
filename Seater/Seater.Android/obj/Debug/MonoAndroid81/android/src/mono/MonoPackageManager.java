@@ -107,7 +107,11 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Seater.Android.dll" comes first in this list. */
 		"Seater.Android.dll",
+		"BottomBar.Droid.dll",
+		"BottomBar.XamarinForms.dll",
+		"BottomNavigationBar.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Seater.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

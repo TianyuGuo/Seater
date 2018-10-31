@@ -5,7 +5,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="Seater.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Seater" android:theme="@style/MainTheme" android:name="md573981f1b032716b4e31c2b1b35b339e1.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Seater" android:theme="@style/MainTheme" android:name="md573981f1b032716b4e31c2b1b35b339e1.MainActivity" />
+    <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md573981f1b032716b4e31c2b1b35b339e1.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

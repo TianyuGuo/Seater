@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Seater.SignUpPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Label Text="Seater" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
             <Entry Text="Account:" VerticalOptions="CenterAndExpand"/>
@@ -12,17 +13,20 @@
             <Entry Text="Address:" VerticalOptions="CenterAndExpand" />
             <Entry Text="Security Question:" VerticalOptions="CenterAndExpand"/>
             <Button Text="Create an account" Clicked="Button_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray">
-                <StackLayout Orientation="Horizontal">
+                <StackLayout VerticalOptions="EndAndExpand"
+                         BackgroundColor="LightGray"
+                             Orientation="Horizontal">
                     <Button Text="Search"
-                            BackgroundColor="LightGray" />
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_search"/>
                     <Button Text="Reservation"
-                            BackgroundColor="LightGray" />
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_reserve"/>
                     <Button Text="Profile"
-                            BackgroundColor="LightGray" />
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_profile"/>
                 </StackLayout>
             </StackLayout>
-        </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

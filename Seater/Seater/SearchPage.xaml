@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Seater.SearchPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                <Entry Placeholder="RestaurantName" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="Search" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Image Source="sushi.png" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Sushi King 
+                       This restaurant is located at 123 Java Ave, Albany, NY.
+                       It provides great sushi! Blablablabla." Grid.Row="1" Grid.Column="1" TextColor="Red"/>
+            </Grid>
+
+                <StackLayout VerticalOptions="EndAndExpand"
+                         BackgroundColor="LightGray"
+                             Orientation="Horizontal">
+                <Button Text="Search"
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_search"/>
+                <Button Text="Reservation"
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_reserve"/>
+                <Button Text="Profile"
+                            BackgroundColor="LightGray" 
+                            Clicked="Button_Clicked_profile"/>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
