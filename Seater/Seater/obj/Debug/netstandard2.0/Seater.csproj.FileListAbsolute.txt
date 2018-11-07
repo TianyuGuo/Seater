@@ -19,8 +19,10 @@ C:\Users\guoti\source\repos\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.csprojAssemblyReference.cache
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\FutureOptionPage2.xaml.g.cs
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\OptionPage.xaml.g.cs
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ReservationPage1.xaml.g.cs
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ReservationPage2.xaml.g.cs

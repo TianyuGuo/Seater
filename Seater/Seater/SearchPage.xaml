@@ -8,8 +8,8 @@
             <StackLayout>
                 <Grid>
                 <Entry Placeholder="RestaurantName" Grid.Row="0" Grid.Column="0"/>
-                <Button Text="Search" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
-                <Image Source="sushi.png" Grid.Row="1" Grid.Column="0"/>
+                    <Button Text="Search" WidthRequest="200" HeightRequest="150" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
+                    <Image Source="sushi.png" Grid.Row="1" Grid.Column="0"/>
                 <Label Text="Sushi King 
                        This restaurant is located at 123 Java Ave, Albany, NY.
                        It provides great sushi! Blablablabla." Grid.Row="1" Grid.Column="1" TextColor="Red"/>

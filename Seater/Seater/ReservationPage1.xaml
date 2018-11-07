@@ -22,7 +22,7 @@
                        There are 10 customers ahead of you.
                        Estimated waiting time 40 minutes." Grid.Row="0" Grid.Column="1" TextColor="Red" VerticalOptions="Center"/>
             </Grid>
-            <Button Text="Reschedule"/>
+            <Button Text="Reschedule" Clicked="Button_Clicked_1"/>
             <Button Text="Cancel" Clicked="Button_Clicked"/>
 
                 <StackLayout VerticalOptions="EndAndExpand"
