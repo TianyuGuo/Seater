@@ -19,7 +19,9 @@ namespace Seater
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ReservationPage2());
+
+                Navigation.PushAsync(new ReservationPage2());
+       
         }
         private void Button_Clicked_search(object sender, EventArgs e)
         {

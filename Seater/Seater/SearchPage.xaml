@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Seater.SearchPage">
+             x:Class="Seater.SearchPage"
+             Title="Search"
+             NavigationPage.HasBackButton="False">
 
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
                 <Grid>
                 <Entry Placeholder="RestaurantName" Grid.Row="0" Grid.Column="0"/>
-                    <Button Text="Search" WidthRequest="200" HeightRequest="150" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
+                    <Button Text="Search" WidthRequest="30" HeightRequest="30" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
                     <Image Source="sushi.png" Grid.Row="1" Grid.Column="0"/>
                 <Label Text="Sushi King 
                        This restaurant is located at 123 Java Ave, Albany, NY.

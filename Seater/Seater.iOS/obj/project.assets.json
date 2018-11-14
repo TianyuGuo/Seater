@@ -719,20 +719,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guoti\\.nuget\\packages\\": {}
+    "C:\\Users\\Tianyu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
       "projectName": "Seater.iOS",
-      "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
-      "packagesPath": "C:\\Users\\guoti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
+      "packagesPath": "C:\\Users\\Tianyu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\guoti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tianyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -740,14 +740,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj": {
-              "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj"
+            "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj": {
+              "projectPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj"
             }
           }
         }

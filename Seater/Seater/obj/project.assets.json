@@ -47,11 +47,10 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -346,23 +345,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guoti\\.nuget\\packages\\": {},
+    "C:\\Users\\Tianyu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj",
+      "projectUniqueName": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj",
       "projectName": "Seater",
-      "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj",
-      "packagesPath": "C:\\Users\\guoti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\obj\\",
+      "projectPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj",
+      "packagesPath": "C:\\Users\\Tianyu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\guoti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tianyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -370,8 +369,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {

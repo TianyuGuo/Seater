@@ -3,40 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
 namespace Seater
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : ContentPage
-	{
+    public partial class MainPage : MasterDetailPage
+    {
         public MainPage()
         {
             InitializeComponent();
+            Detail= new NavigationPage(new SearchPage());
+            IsPresented = false;
         }
 
-        public void ClickTap1(object sender, EventArgs e)
+        private void menu_search_button(object sender, EventArgs e)
         {
-            var page = new SearchPage();
-            MainViewContent.Content = page.Content;
-            MainViewContent.ControlTemplate = page.ControlTemplate;
-
-
+             Detail= new NavigationPage(new SearchPage());
+            IsPresented = false;
         }
-
-        public void ClickTap2(object sender, EventArgs e)
+        private void menu_reserve_button(object sender, EventArgs e)
         {
-            var page = new ReservationPage1();
-            MainViewContent.Content = page.Content;
-
+            Detail = new NavigationPage(new ReservationPage1());
+            IsPresented = false;
         }
-
-        public void ClickTap3(object sender, EventArgs e)
+        private void menu_profile_button(object sender, EventArgs e)
         {
-            var page = new ProfilePage();
-            MainViewContent.Content = page.Content;
-
+            Detail = new NavigationPage(new ProfilePage());
+            IsPresented = false;
         }
-	}
+
+    }
 }

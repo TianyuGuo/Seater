@@ -1,62 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Seater.MainPage">
-
-    <Grid >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-
-
-        <!-- PANEL 1 -->
-
-        <ContentView
-            Grid.Row="0"
-            IsVisible="True" BackgroundColor="White" x:Name="MainViewContent">
-
-
-        </ContentView>
-
-
-        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="1">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-
-            <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="0">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ClickTap1" NumberOfTapsRequired="1" />
-                </StackLayout.GestureRecognizers>
-                <Image x:Name="tab_home_icon_selected" IsVisible="True" Source="search.png" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
-                <Label Margin="0" x:Name="tab_home" Text="Search" FontSize="Micro"/>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="1">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ClickTap2" NumberOfTapsRequired="1" />
-                </StackLayout.GestureRecognizers>
-                <Image x:Name="tab_scan_icon_unselected"  Source="reserve.png" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
-                <Label Text="Revervation" x:Name="tab_scan" FontSize="Micro" />
-
-            </StackLayout>
-
-            <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="2">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ClickTap3" NumberOfTapsRequired="1" />
-                </StackLayout.GestureRecognizers>
-                <Image x:Name="tab_search_icon_unselected" Source="profile.png" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
-                <Label Text="Profile" x:Name="tab_search" FontSize="Micro"/>
-            </StackLayout>
-
-
-        </Grid>
-
-    </Grid>
-
-</ContentPage>
+             xmlns:local="clr-namespace:Seater"
+             x:Class="Seater.MainPage"
+                  Title="Menu"
+                  MasterBehavior="Popover"
+                  NavigationPage.HasBackButton="False">
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu" Icon="reserve.png">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Menu"></Label>
+                    <Button x:Name="search" Text="Search" TextColor="White" BackgroundColor="Black" Clicked="menu_search_button"></Button>
+                    <Button x:Name="reserve" Text="Reservation" TextColor="White" BackgroundColor="Black" Clicked="menu_reserve_button"></Button>
+                    <Button x:Name="profile" Text="Profile" TextColor="White" BackgroundColor="Black" Clicked="menu_profile_button"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
