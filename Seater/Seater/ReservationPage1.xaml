@@ -24,22 +24,9 @@
                        There are 10 customers ahead of you.
                        Estimated waiting time 40 minutes." Grid.Row="0" Grid.Column="1" TextColor="Red" VerticalOptions="Center"/>
             </Grid>
-            <Button Text="Reschedule" Clicked="Button_Clicked_1"/>
-            <Button Text="Cancel" Clicked="Button_Clicked"/>
+            <Button Text="Reschedule" Clicked="reschedule_Button"/>
+            <Button Text="Cancel" Clicked="schedule_cancel_Button"/>
 
-                <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray"
-                             Orientation="Horizontal">
-                    <Button Text="Search"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_search"/>
-                    <Button Text="Reservation"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_reserve"/>
-                    <Button Text="Profile"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_profile"/>
-                </StackLayout>
 
             </StackLayout>
             </ScrollView>

@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Seater.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#3897f0"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="HeightRequest" Value="50"></Setter>
+                <Setter Property="VerticalOptions" Value="Start"></Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

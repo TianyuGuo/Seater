@@ -6,25 +6,13 @@
              NavigationPage.HasBackButton="False">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <Label Text="Your Reservation Information" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Name:" VerticalOptions="CenterAndExpand"/>
-            <Label Text="Phone#:" VerticalOptions="CenterAndExpand"/>
-            <Label Text="Address:" VerticalOptions="CenterAndExpand"/>
-            <Label Text="Security Question:" VerticalOptions="CenterAndExpand"/>
-                <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray"
-                             Orientation="Horizontal">
-                    <Button Text="Search"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_search"/>
-                    <Button Text="Reservation"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_reserve"/>
-                    <Button Text="Profile"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_profile"/>
-                </StackLayout>
+            <StackLayout Margin="10,20,10,0">
+                <Label Text="Name:" VerticalOptions="Start"/>
+                <Label Text="Phone#:" VerticalOptions="Start"/>
+                <Label Text="Address:" VerticalOptions="Start"/>
+                <Label Text="Security Question:" VerticalOptions="Start"/>
+                <Button Text="Search the restaurant" Style="{StaticResource buttonStyle}" Clicked="profile_search_button"/>
+                <Button x:Name="logout" Style="{StaticResource buttonStyle}" Text="Logout" Clicked="profile_logout_button"></Button>
             </StackLayout>
             </ScrollView>
     </ContentPage.Content>

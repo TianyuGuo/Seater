@@ -31,7 +31,7 @@
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
-                <Image Source="seaterLogo.png" HeightRequest="90" VerticalOptions="EndAndExpand"/>
+                <Image Source="logo.png" HeightRequest="90" VerticalOptions="EndAndExpand"/>
                 <Entry Grid.Row="1" Placeholder="Email or Phone Number" PlaceholderColor="#bababa" FontSize="16"/>
                 <Entry Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
                 <Button Text="LogIn" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3" Clicked="go_search_page"/>

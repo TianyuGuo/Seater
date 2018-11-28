@@ -32,5 +32,10 @@ namespace Seater
             IsPresented = false;
         }
 
+        private void menu_logout_button(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new LoginPage2());
+            IsPresented = false;
+        }
     }
 }

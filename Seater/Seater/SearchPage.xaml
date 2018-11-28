@@ -7,30 +7,39 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout Margin="10,10,10,0">
                 <Grid>
-                <Entry Placeholder="RestaurantName" Grid.Row="0" Grid.Column="0"/>
-                    <Button Text="Search" WidthRequest="30" HeightRequest="30" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
-                    <Image Source="sushi.png" Grid.Row="1" Grid.Column="0"/>
-                <Label Text="Sushi King 
-                       This restaurant is located at 123 Java Ave, Albany, NY.
-                       It provides great sushi! Blablablabla." Grid.Row="1" Grid.Column="1" TextColor="Red"/>
-            </Grid>
+                    <Grid.RowDefinitions>
 
-                <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray"
-                             Orientation="Horizontal">
-                <Button Text="Search"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_search"/>
-                <Button Text="Reservation"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_reserve"/>
-                <Button Text="Profile"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_profile"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Entry Placeholder="RestaurantName" Grid.Row="0" Grid.Column="0"/>
+                    <Image Source="search.png" HeightRequest="20" Grid.Row="0" Grid.Column="1" HorizontalOptions="EndAndExpand" Grid.ColumnSpan="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Tap_search"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="sushi.png" HeightRequest="50" Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Tap_picture1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Sushi King
+                           This restaurant is located at 123 Java Ave, Albany, NY.
+                       It provides great sushi! Blablablabla." Grid.Row="1" Grid.Column="1" FontFamily="CarterOne.ttf"/>
+                </Grid>
             </StackLayout>
-        </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

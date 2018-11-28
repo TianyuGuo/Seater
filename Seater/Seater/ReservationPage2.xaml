@@ -1,26 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Seater.ReservationPage2">
+             x:Class="Seater.ReservationPage2"
+             Title="Your Reservation Information">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <Label Text="Your Reservation Information" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Your Reservation has been cancelled!" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Search more restaurant" Clicked="Button_Clicked"/>
-                <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray"
-                             Orientation="Horizontal">
-                    <Button Text="Search"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_search"/>
-                    <Button Text="Reservation"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_reserve"/>
-                    <Button Text="Profile"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_profile"/>
-                </StackLayout>
+            <StackLayout  Margin="10,20,10,0">
+
+                <Label Text="Your Reservation has been cancelled!" FontFamily="CarterOne.ttf" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Search more restaurant" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked"/>
+
             </StackLayout>
             </ScrollView>
     </ContentPage.Content>

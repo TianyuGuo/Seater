@@ -1,25 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Seater.OptionPage">
+             x:Class="Seater.OptionPage"
+             BackgroundColor="White"
+             Title="Option">
     <ContentPage.Content>
         <StackLayout>
             <Image Source="sushi.png" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="I need a table now!" Clicked="Button_Clicked"/>
-            <Button Text="Make a future reservation!" Clicked="Button_Clicked_1"/>
-            <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray"
-                             Orientation="Horizontal">
-                <Button Text="Search"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_search"/>
-                <Button Text="Reservation"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_reserve"/>
-                <Button Text="Profile"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_profile"/>
-            </StackLayout>
+            <Button Text="I need a table now!" Style="{StaticResource buttonStyle}" Clicked="now_Button_Clicked"/>
+            <Button Text="Make a future reservation!" Style="{StaticResource buttonStyle}" Clicked="future_Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

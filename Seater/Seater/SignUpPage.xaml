@@ -5,28 +5,21 @@
              Title="Sign Up">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <Label Text="Seater" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Entry Text="Account:" VerticalOptions="CenterAndExpand"/>
-            <Entry Text="Password:" VerticalOptions="CenterAndExpand" />
-            <Entry Text="Name:" VerticalOptions="CenterAndExpand" />
-            <Entry Text="Phone#:" VerticalOptions="CenterAndExpand" />
-            <Entry Text="Address:" VerticalOptions="CenterAndExpand" />
-            <Entry Text="Security Question:" VerticalOptions="CenterAndExpand"/>
-            <Button Text="Create an account" Clicked="Button_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-                <StackLayout VerticalOptions="EndAndExpand"
-                         BackgroundColor="LightGray"
-                             Orientation="Horizontal">
-                    <Button Text="Search"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_search"/>
-                    <Button Text="Reservation"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_reserve"/>
-                    <Button Text="Profile"
-                            BackgroundColor="LightGray" 
-                            Clicked="Button_Clicked_profile"/>
-                </StackLayout>
+            <StackLayout Margin="10,20,10,0">
+                <Label Text="Account" Style="Italic" FontSize="Medium"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Entry/>
+                <Label Text="Password" Style="Italic" FontSize="Medium"  VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Entry/>
+                <Label Text="Name" Style="Italic" FontSize="Medium"  VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Entry/>
+                <Label Text="PhoneNumber:" Style="Italic" FontSize="Medium"  VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Entry/>
+                <Label Text="Address" Style="Italic" FontSize="Medium"  VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Entry/>
+                <Label Text="Security Question" Style="Italic" FontSize="Medium"  VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Entry/>
+            <Button Text="Create an account" Clicked="signup_Button_Clicked" Style="{StaticResource buttonStyle}"/>
+          
             </StackLayout>
             </ScrollView>
     </ContentPage.Content>

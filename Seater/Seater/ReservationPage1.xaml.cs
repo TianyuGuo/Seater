@@ -17,30 +17,16 @@ namespace Seater
 			InitializeComponent ();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void schedule_cancel_Button(object sender, EventArgs e)
         {
 
                 Navigation.PushAsync(new ReservationPage2());
        
         }
-        private void Button_Clicked_search(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SearchPage());
-        }
 
-        private void Button_Clicked_reserve(object sender, EventArgs e)
+        private void reschedule_Button(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ReservationPage1());
-        }
-
-        private void Button_Clicked_profile(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new ProfilePage());
-        }
-
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SearchPage());
+            Navigation.PushAsync(new MainPage());
         }
     }
 }

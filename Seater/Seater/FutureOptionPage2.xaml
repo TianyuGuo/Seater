@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Seater.FutureOptionPage2">
+             x:Class="Seater.FutureOptionPage2"
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="You have made a reservation successfully!"
                 VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Search more restaurant" Clicked="Button_Clicked"/>
+                HorizontalOptions="CenterAndExpand" TextColor="black" FontAttributes="Bold" FontFamily="RobotoCondensed-Bold.ttf"/>
+            <Button Text="Search more restaurant" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

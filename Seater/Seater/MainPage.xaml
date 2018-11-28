@@ -3,17 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Seater"
              x:Class="Seater.MainPage"
-                  Title="Menu"
                   MasterBehavior="Popover"
                   NavigationPage.HasBackButton="False">
     <MasterDetailPage.Master>
-        <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu" Icon="reserve.png">
+        <ContentPage Padding="10" BackgroundColor="white" Title="Menu" Icon="reserve.png">
             <ContentPage.Content>
                 <StackLayout Margin="5,30,5,5">
-                    <Label Text="Menu"></Label>
-                    <Button x:Name="search" Text="Search" TextColor="White" BackgroundColor="Black" Clicked="menu_search_button"></Button>
-                    <Button x:Name="reserve" Text="Reservation" TextColor="White" BackgroundColor="Black" Clicked="menu_reserve_button"></Button>
-                    <Button x:Name="profile" Text="Profile" TextColor="White" BackgroundColor="Black" Clicked="menu_profile_button"></Button>
+                    <Label Text="Menu" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="search" Style="{StaticResource buttonStyle}" Text="Search" Clicked="menu_search_button"></Button>
+                    <Button x:Name="reserve" Style="{StaticResource buttonStyle}" Text="Reservation" Clicked="menu_reserve_button"></Button>
+                    <Button x:Name="profile" Style="{StaticResource buttonStyle}" Text="Profile" Clicked="menu_profile_button"></Button>
+                    <Button x:Name="logout" Style="{StaticResource buttonStyle}" Text="Logout" Clicked="menu_logout_button"></Button>
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>

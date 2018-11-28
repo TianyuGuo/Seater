@@ -556,10 +556,11 @@
   },
   "libraries": {
     "Xamarin.Forms/3.1.0.697729": {
-      "sha512": "oYfHpCY9i9wN4vLllsIhzDZY5iOCUtZ3RHxID1fiXOcf7yL9UA16NUsI8opoNmpv1Ru2lTGG9ZKKT1sYS6DLjA==",
+      "sha512": "6y1rnRKVqgRWpGy+mjlgf5cxRYiHsiGS4b51/AJxxkEyf7w1XJGzcLl4wV8Yjpv6/kKxsIBoAgqxIdFElQcNkA==",
       "type": "package",
       "path": "xamarin.forms/3.1.0.697729",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
@@ -719,20 +720,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tianyu\\.nuget\\packages\\": {}
+    "C:\\Users\\guoti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
       "projectName": "Seater.iOS",
-      "projectPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
-      "packagesPath": "C:\\Users\\Tianyu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\obj\\",
+      "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\Seater.iOS.csproj",
+      "packagesPath": "C:\\Users\\guoti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Tianyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guoti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -740,13 +741,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj": {
-              "projectPath": "C:\\Users\\Tianyu\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj"
+            "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj": {
+              "projectPath": "C:\\Users\\guoti\\Documents\\GitHub\\Seater\\Seater\\Seater\\Seater.csproj"
             }
           }
         }
