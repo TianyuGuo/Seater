@@ -6,9 +6,8 @@
              NavigationPage.HasBackButton="False">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout BackgroundColor="white" Margin="10,10,10,0">
-            <Button Text="Back" VerticalOptions="Start" HorizontalOptions="Start"></Button>
-            <Label Text="My Reservation"
+            <StackLayout BackgroundColor="white" Margin="10,10,10,0">
+                <Label Text="My Reservation"
                    TextColor="Black"
                    FontSize="24"
                    VerticalOptions="Start" 
@@ -19,7 +18,7 @@
                    VerticalOptions="Start" 
                    HorizontalOptions="CenterAndExpand"/>
             <Grid>
-                <Image Source="sushi.jpg" WidthRequest="100" HeightRequest="80" Grid.Row="0" Grid.Column="0"/>
+                <Image Source="sushi.jpg" WidthRequest="100" HeightRequest="100" Grid.Row="0" Grid.Column="0"/>
                 <Label Text="Your waiting number is 11. 
                        There are 10 customers ahead of you.
                        Estimated waiting time 40 minutes." Grid.Row="0" Grid.Column="1" TextColor="Red" VerticalOptions="Center"/>

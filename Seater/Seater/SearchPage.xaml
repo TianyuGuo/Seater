@@ -6,39 +6,43 @@
              NavigationPage.HasBackButton="False">
 
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Margin="10,10,10,0">
-                <Grid>
-                    <Grid.RowDefinitions>
-
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="40"/>
-                        <RowDefinition Height="40"/>
-                        <RowDefinition Height="*"/>
-
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Entry Placeholder="RestaurantName" Grid.Row="0" Grid.Column="0"/>
-                    <Image Source="search.png" HeightRequest="20" Grid.Row="0" Grid.Column="1" HorizontalOptions="EndAndExpand" Grid.ColumnSpan="30">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Tap_search"></TapGestureRecognizer>
-                        </Image.GestureRecognizers>
-                    </Image>
-                    <Image Source="sushi.png" HeightRequest="50" Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand">
+        <ScrollView Margin="10,10,10,0">
+            <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="RestaurantName" HorizontalOptions="FillAndExpand"/>
+    
+                    <Button Text="&#xf002;" 
+                           FontSize="50"
+                           TextColor="Black"
+                            BorderColor="Transparent"
+                            BackgroundColor="Transparent"
+                           VerticalOptions="Start" 
+                           HorizontalOptions="End" >
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String"
+                                 Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" 
+                                 iOS="Font Awesome 5 Free" 
+                                 WinPhone="Assets/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+                        </Button.FontFamily>
+                    </Button>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="StartAndExpand">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Tap_picture1"></TapGestureRecognizer>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Sushi King
-                           This restaurant is located at 123 Java Ave, Albany, NY.
-                       It provides great sushi! Blablablabla." Grid.Row="1" Grid.Column="1" FontFamily="CarterOne.ttf"/>
-                </Grid>
+                    <Label Text="Sushi King &#10;This restaurant is located at 123 Java Ave, Albany, NY. &#10;It provides great sushi!"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <Label BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

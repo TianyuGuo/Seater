@@ -9,7 +9,7 @@
         <ContentPage Padding="10" BackgroundColor="white" Title="Menu" Icon="reserve.png">
             <ContentPage.Content>
                 <StackLayout Margin="5,30,5,5">
-                    <Label Text="Menu" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="Black">
+                    <Label Text="Menu" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#3897f0">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>

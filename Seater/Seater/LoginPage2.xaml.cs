@@ -18,7 +18,7 @@ namespace Seater
 		}
         private void go_search_page(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new NavigationPage( new SearchPage()));
         }
 
         private void go_help(object sender, EventArgs e)
