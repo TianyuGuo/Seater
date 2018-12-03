@@ -7,19 +7,20 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace Seater
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ConfirmationPage : ContentPage
-    {
-        public ConfirmationPage()
+    public partial class WaitingNumber: ContentPage
+        {
+        public WaitingNumber()
         {
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Get_Waiting_Number(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchPage());
+            Navigation.PushAsync(new ConfirmationPage());
         }
 
     }

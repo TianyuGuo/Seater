@@ -8,28 +8,34 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Seater.Views
+
+namespace Seater
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CalendarPage : ContentPage
     {
-        public CalendarPage()
-        {
-            InitializeComponent();
+            public CalendarPage()
+            {
+                InitializeComponent();
+            }
+
+            void OnDateSelected(object sender, DateChangedEventArgs args)
+            {
+                Recalculate();
+            }
+
+            void OnSwitchToggled(object sender, ToggledEventArgs args)
+            {
+                Recalculate();
+            }
+
+            void Recalculate()
+            {
+            var timeSpan =  startDatePicker.Date ;
+
+                resultLabel.Text = String.Format("{0} day{1} between dates",
+                                                 timeSpan.Day, timeSpan.Day == 1 ? "" : "s");
+            }
         }
 
-        void Handle_SizeChanged(object sender, System.EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        void Handle_DateSelected(object sender, Xamarin.Forms.DateChangedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SearchPage());
-        }
     }
-}
