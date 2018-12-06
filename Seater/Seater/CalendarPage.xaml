@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
-             x:Class="Seater.Views.CalendarPage">
+             x:Class="Seater.CalendarPage">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>

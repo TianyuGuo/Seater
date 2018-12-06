@@ -38,13 +38,14 @@ C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Xa
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.dll
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.pdb
 C:\Users\guoti\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.csprojAssemblyReference.cache
-C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\bin\Debug\netstandard2.0\Seater.deps.json
-C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\bin\Debug\netstandard2.0\Seater.dll
-C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\bin\Debug\netstandard2.0\Seater.pdb
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.csprojAssemblyReference.cache
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\CalendarPage.xaml.g.cs
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ConfirmationPage.xaml.g.cs
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ConfirmationTwo.xaml.g.cs
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\FutureOptionPage2.xaml.g.cs
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\InformationPage.xaml.g.cs
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\LoginPage2.xaml.g.cs
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -57,6 +58,9 @@ C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\S
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.csproj.CoreCompileInputs.cache
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.AssemblyInfoInputs.cache
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.AssemblyInfo.cs
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\bin\Debug\netstandard2.0\Seater.deps.json
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\bin\Debug\netstandard2.0\Seater.dll
+C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\bin\Debug\netstandard2.0\Seater.pdb
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.dll
 C:\Users\Tianyu\Documents\GitHub\Seater\Seater\Seater\obj\Debug\netstandard2.0\Seater.pdb

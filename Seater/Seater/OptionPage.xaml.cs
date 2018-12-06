@@ -19,7 +19,7 @@ namespace Seater
 
         private void now_Button_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new CalendarPage());
         }
 
         private void future_Button_Clicked(object sender, EventArgs e)
