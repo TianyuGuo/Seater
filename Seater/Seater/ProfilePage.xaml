@@ -7,13 +7,13 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="10,20,10,0">
-                <Label Text="Name:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Label Text="Name:" Style="Italic" FontSize="Large" FontAttributes="Bold" VerticalOptions="Start" HorizontalOptions="Start"/>
                 <Label Text="Tim" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
-                <Label Text="PhoneNumber:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Label Text="PhoneNumber:" Style="Italic" FontAttributes="Bold" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
                 <Label Text="518-518-518" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
-                <Label Text="Address:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Label Text="Address:" Style="Italic" FontAttributes="Bold" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
                 <Label Text="123 Abc St, Albany, NY" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
-                <Label Text="Security Question" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Label Text="Security Question:" Style="Italic" FontAttributes="Bold" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
                 <Label Text="************" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
                 <Button Text="Search the restaurant" Style="{StaticResource buttonStyle}" Clicked="profile_search_button"/>
                 <Button x:Name="logout" Style="{StaticResource buttonStyle}" Text="Logout" Clicked="profile_logout_button"></Button>

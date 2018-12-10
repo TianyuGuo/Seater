@@ -18,11 +18,11 @@ namespace Seater
 		}
         private void profile_search_button(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchPage());
+            Application.Current.MainPage = new Login();
         }
         private void profile_logout_button(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new LoginDetail());
+            Application.Current.MainPage = new LoginDetail();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Seater
     {
         public LoginMenuItem()
         {
-            TargetType = typeof(LoginDetail);
+            TargetType = typeof(SearchPage);
         }
         public int Id { get; set; }
         public string Title { get; set; }

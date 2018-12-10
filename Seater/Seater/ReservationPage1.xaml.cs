@@ -25,7 +25,7 @@ namespace Seater
 
         private void reschedule_Button(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchPage());
+            Application.Current.MainPage = new Login();
         }
     }
 }

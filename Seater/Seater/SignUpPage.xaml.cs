@@ -19,7 +19,7 @@ namespace Seater
 
     private void signup_Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchPage());
+            Application.Current.MainPage = new Login();
         }
     }
 }

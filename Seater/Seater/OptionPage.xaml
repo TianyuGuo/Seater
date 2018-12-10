@@ -6,7 +6,7 @@
              Title="Option">
     <ContentPage.Content>
         <StackLayout Margin="10,20,10,0">
-            <Image Source="sushi.png" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="sushi.png" VerticalOptions="Start" HorizontalOptions="CenterAndExpand"/>
             <Label Text="Sushi King &#10;This restaurant is located at 123 Java Ave, Albany, NY. &#10;It provides great sushi!"
                            VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
                 <Label.FontFamily>
@@ -15,8 +15,8 @@
                     </OnPlatform>
                 </Label.FontFamily>
             </Label>
-            <Button Text="I need a table now!" Style="{StaticResource buttonStyle}" Clicked="now_Button_Clicked" VerticalOptions="StartAndExpand"/>
-            <Button Text="Make a future reservation!" Style="{StaticResource buttonStyle}" Clicked="future_Button_Clicked" VerticalOptions="StartAndExpand" />
+            <Button Text="I need a table now!" Style="{StaticResource buttonStyle}" Clicked="now_Button_Clicked" VerticalOptions="Start"/>
+            <Button Text="Make a future reservation!" Style="{StaticResource buttonStyle}" Clicked="future_Button_Clicked" VerticalOptions="Start" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
