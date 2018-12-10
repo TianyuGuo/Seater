@@ -21,7 +21,7 @@ namespace Seater
         private void Button_Clicked(object sender, EventArgs e)
         {
             //This should go to the reservation page
-            Navigation.PushAsync(new SearchPage());
+            Application.Current.MainPage = new Login(); 
         }
     }
 }

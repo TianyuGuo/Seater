@@ -32,10 +32,15 @@ namespace Seater
             void Recalculate()
             {
             var timeSpan =  startDatePicker.Date ;
-
-                resultLabel.Text = String.Format("{0} day{1} between dates",
-                                                 timeSpan.Day, timeSpan.Day == 1 ? "" : "s");
             }
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ConfirmationPageTwo());
         }
 
+
+
+
     }
+
+}
