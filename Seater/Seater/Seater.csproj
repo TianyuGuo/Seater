@@ -14,13 +14,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LoginMaster.xaml.cs">
+      <DependentUpon>LoginMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LoginDetail.xaml.cs">
+      <DependentUpon>LoginDetail.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="ForgotPasswordPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="FutureOptionPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="LoginPage2.xaml">
+    <EmbeddedResource Update="LoginDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="OptionPage.xaml">

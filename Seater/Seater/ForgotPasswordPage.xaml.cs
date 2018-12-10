@@ -19,7 +19,7 @@ namespace Seater
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new LoginPage2());
+            Navigation.PushAsync(new LoginDetail());
         }
     }
 }

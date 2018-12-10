@@ -7,8 +7,15 @@
         <ScrollView>
             <StackLayout  Margin="10,20,10,0">
 
-                <Label Text="Your Reservation has been cancelled!" FontFamily="CarterOne.ttf" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Search more restaurant" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked"/>
+                <Label Text="Your reservation has been cancelled! &#10;Thank you!"
+                           VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Button Text="Search more restaurant" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked" VerticalOptions="StartAndExpand"/>
 
             </StackLayout>
             </ScrollView>

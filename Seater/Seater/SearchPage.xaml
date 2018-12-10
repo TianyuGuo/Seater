@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Seater.SearchPage"
-             Title="Search"
-             NavigationPage.HasBackButton="False">
+             Title="Search">
 
     <ContentPage.Content>
         <ScrollView Margin="10,10,10,0">
@@ -28,6 +27,23 @@
                 </StackLayout>
             
                 <StackLayout Orientation="Horizontal">
+                    <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Start">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Tap_picture1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Sushi King &#10;This restaurant is located at 123 Java Ave, Albany, NY. &#10;It provides great sushi!"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <Label BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+                
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
                     <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="StartAndExpand">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Tap_picture1"></TapGestureRecognizer>
@@ -42,7 +58,43 @@
                         </Label.FontFamily>
                     </Label>
                 </StackLayout>
-                <Label BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"/>
+
+                <Label BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                    <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="StartAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Tap_picture1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Sushi King &#10;This restaurant is located at 123 Java Ave, Albany, NY. &#10;It provides great sushi!"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+                <Label BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                    <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="StartAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Tap_picture1"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Sushi King &#10;This restaurant is located at 123 Java Ave, Albany, NY. &#10;It provides great sushi!"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

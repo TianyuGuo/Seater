@@ -19,14 +19,13 @@ namespace Seater
 
         private void schedule_cancel_Button(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new ReservationPage2());
 
-                Navigation.PushAsync(new ReservationPage2());
-       
         }
 
         private void reschedule_Button(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new SearchPage());
         }
     }
 }

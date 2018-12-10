@@ -11,7 +11,7 @@ namespace Seater
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage2());
+            MainPage = new Seater.Login();
         }
 
         protected override void OnStart()

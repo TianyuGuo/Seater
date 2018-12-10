@@ -6,25 +6,37 @@
              NavigationPage.HasBackButton="False">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="white" Margin="10,10,10,0">
-                <Label Text="My Reservation"
-                   TextColor="Black"
-                   FontSize="24"
-                   VerticalOptions="Start" 
-                   HorizontalOptions="CenterAndExpand" />
-            <Label Text="Sushi King"
-                   TextColor="Black"
-                   FontSize="22"
-                   VerticalOptions="Start" 
-                   HorizontalOptions="CenterAndExpand"/>
-            <Grid>
-                <Image Source="sushi.jpg" WidthRequest="100" HeightRequest="100" Grid.Row="0" Grid.Column="0"/>
-                <Label Text="Your waiting number is 11. 
-                       There are 10 customers ahead of you.
-                       Estimated waiting time 40 minutes." Grid.Row="0" Grid.Column="1" TextColor="Red" VerticalOptions="Center"/>
-            </Grid>
-            <Button Text="Reschedule" Clicked="reschedule_Button"/>
-            <Button Text="Cancel" Clicked="schedule_cancel_Button"/>
+            <StackLayout BackgroundColor="white" Margin="10,20,10,0">
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="StartAndExpand">
+                    </Image>
+                    <Label Text="Sushi King &#10;Your waiting number is 11. &#10;Estimated waiting time 40 minutes."
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <Button Text="Reschedule" Clicked="reschedule_Button" Style="{StaticResource buttonStyle}"/>
+                <Button Text="Cancel" Clicked="schedule_cancel_Button" Style="{StaticResource buttonStyle}"/>
+                
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                    <Image Source="sushi.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="StartAndExpand">
+                    </Image>
+                    <Label Text="Sushi King &#10;The reservation data is 10/1/2019"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <Button Text="Reschedule" Clicked="reschedule_Button"  Style="{StaticResource buttonStyle}"/>
+                <Button Text="Cancel" Clicked="schedule_cancel_Button" Style="{StaticResource buttonStyle}"/>
 
 
             </StackLayout>
