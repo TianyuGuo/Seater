@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Seater.ResInformation">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Reservation Details" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Entry Text="Name: " VerticalOptions="CenterAndExpand"/>
+            <Entry Text="Phone#: " VerticalOptions="CenterAndExpand" />
+            <Entry Text="Occasion: " VerticalOptions="CenterAndExpand" />
+            <Entry Text="Special Note: " VerticalOptions="CenterAndExpand" />
+            <Button Text="Continue" Clicked="Button_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+               
+            </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

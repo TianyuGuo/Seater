@@ -6,23 +6,19 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
-
 namespace Seater
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WaitingNumber: ContentPage
+    public partial class ResInformation: ContentPage
+    {public ResInformation()
         {
-        public WaitingNumber()
-        {
-            InitializeComponent();
+           InitializeComponent();
         }
 
-        private void Get_Waiting_Number(object sender, EventArgs e)
-        { 
 
-        Navigation.PushAsync(new ConfirmationPage());
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ConfirmationTwo());
         }
-
     }
 }

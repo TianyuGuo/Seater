@@ -35,7 +35,7 @@ namespace Seater
             }
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ConfirmationPageTwo());
+            Navigation.PushAsync(new ResInformation());
         }
 
 

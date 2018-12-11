@@ -21,19 +21,19 @@
         <Label Text="Choose A Date "
                TextColor="Red"
                Style="{DynamicResource TitleStyle}"
-               Margin="0, 20"
+               Margin="0, 40"
+               FontSize="Large"
                HorizontalTextAlignment="Center" />
 
-        <Label Text="Enter Date:" />
-
         <DatePicker x:Name="startDatePicker"
+                    MinimumDate="12/12/2018" 
                     Format="D"
                     Margin="30, 0, 0, 30"
                     DateSelected="OnDateSelected" />
 
       
  
- <Button Text="Click Here to Get A Waiting Number" Clicked="Button_Clicked" TranslationY="-20"/>
+ <Button Text="Continue" Clicked="Button_Clicked" TranslationY="-20" VerticalOptions="EndAndExpand" />
      
     </StackLayout>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentView 
+<ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Seater.ConfirmationPageTwo">
-    <ContentView.Content>
+    x:Class="Seater.ConfirmationTwo">
+    <ContentPage.Content>
         
         
          <ScrollView>
@@ -23,6 +23,9 @@
             <Label Text="Occasion: " FontSize="20" TextColor="Red"  VerticalOptions="Start" HorizontalOptions="Start" TranslationY="-120"/>    
             <Label Text="Birthday Party! " TextColor="Blue" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationX="20"  TranslationY="-167"/>   
             
+            <Label Text="Date: " FontSize="20" TextColor="Red"  VerticalOptions="Start" HorizontalOptions="Start" TranslationY="-120"/>    
+            <Label Text="January 1, 2018 " TextColor="Blue" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationX="20"  TranslationY="-167"/>   
+                
             <Label Text="Special Note: " TextColor="Red" FontSize="20" VerticalOptions="Start" HorizontalOptions="Start" TranslationY="-120" />
             <Label Text="No Vanilla Cake" TextColor="Blue" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationX="20" TranslationY="-168" />
                 
@@ -39,5 +42,5 @@
         
         
         
-    </ContentView.Content>
-</ContentView>
+    </ContentPage.Content>
+</ContentPage>

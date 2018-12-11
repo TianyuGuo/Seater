@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 namespace Seater
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-
-    public partial class ConfirmationPageTwo: ContentView
+    public partial class ConfirmationTwo : ContentPage
     {
-
-        public ConfirmationPageTwo()
+        public ConfirmationTwo()
         {
             InitializeComponent();
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //This should go to the reservation page
-            Application.Current.MainPage = new Login(); 
+            Application.Current.MainPage = new Login();
         }
+
     }
 }
