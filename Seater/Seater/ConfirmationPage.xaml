@@ -4,22 +4,23 @@
              BackgroundColor="White"
              x:Class="Seater.ConfirmationPage">
     <ContentPage.Content>
-        
-        
-        
-         <StackLayout>
+
+
+
+        <StackLayout Margin="10,10,10,0">
            <Image Source="CheckMark.jpg" WidthRequest="10" HeightRequest="100" Grid.Row="0" Grid.Column="0"/>
             
                 
-            <Label Text="You made a reservation" FontSize="20" TextColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Label Text="successully! " FontSize="20" TextColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  TranslationY="-50"/>    
-            <Label Text="Your waiting number is 11" TextColor="Red" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationY="-50"  />
-            <Label Text="Estimated waiting time: " TextColor="Red" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationY="-100"/>   
-            <Label Text="40 Minutes" FontSize="20" TextColor="Red"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationY="-70"/>    
-            <Label Text="You will recieve an alert when" TextColor="Red" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationY="-70"/>   
-            <Label Text="your number is called." TextColor="Red" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TranslationY="-120" />
-            
-            <Button Text="Continue" Clicked="Button_Clicked" TranslationY="-20"/>
+    
+            <Label Text="You made a reservation successully! &#10;Your waiting number is 11 &#10;Estimated waiting time: 40 Minutes! &#10;You will recieve an alert when your number is called!"
+                           VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Button Text="Continue" Clicked="Button_Clicked" Style="{StaticResource buttonStyle}"/>
             
             
                 

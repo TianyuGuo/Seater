@@ -23,6 +23,7 @@
                Style="{DynamicResource TitleStyle}"
                Margin="0, 40"
                FontSize="Large"
+               FontAttributes="Bold"
                HorizontalTextAlignment="Center" />
 
         <DatePicker x:Name="startDatePicker"
@@ -31,9 +32,9 @@
                     Margin="30, 0, 0, 30"
                     DateSelected="OnDateSelected" />
 
-      
- 
- <Button Text="Continue" Clicked="Button_Clicked" TranslationY="-20" VerticalOptions="EndAndExpand" />
+
+
+        <Button Text="Continue" Clicked="Button_Clicked" Style="{StaticResource buttonStyle}"/>
      
     </StackLayout>
     

@@ -6,21 +6,30 @@
     x:Class="Seater.WaitingNumber">
     <ContentPage.Content>
         <ScrollView>
-         <StackLayout>
+            <StackLayout Margin="10,10,10,0">
            <Image Source="SushiPlace.png" Aspect="AspectFill" WidthRequest="10" HeightRequest="120"  Grid.Row="0" Grid.Column="0"/>
            <Image Source="sushi.jpg" Aspect="AspectFill" HeightRequest="120" />
-            
+
+
+                <Label Text="Sushi King &#10;This restaurant is located at 123 Java Ave, Albany, NY. &#10;It provides great sushi!"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label Text="Now there are 10 customers ahead of you! &#10;Estimated waiting time: 40 Minutes!"
+                           VerticalOptions="Start" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
                 
-            <Label Text="Sushi King" TextColor="Black" FontSize="18" Style="Italic" VerticalOptions="Start" HorizontalOptions="Start"/>
-            <Label Text="The restaurant is located: " TextColor="Black" FontSize="18" Style="Italic" VerticalOptions="Start" HorizontalOptions="Start"/>
-            <Label Text="123 Java Street" TextColor="Black" FontSize="18" Style="Italic" VerticalOptions="Start" HorizontalOptions="Start"  />
-            <Label Text="Albany, New York, 12203 " TextColor="Black" FontSize="18" Style="Italic" VerticalOptions="Start" HorizontalOptions="Start"/>
-           
-            <Label Text="Now there are 10 customers ahead of you" TextColor="Red" FontSize="18" Style="Italic" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TranslationY="70"/>
-            
-            
-            <Label Text="Estimated waiting time: 40 minutes" TextColor="Red" FontSize="18" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Click Here to Get A Waiting Number" Clicked="Get_Waiting_Number" TranslationY="-20"/>
+                <Button Text="Click Here to Get A Waiting Number" Clicked="Get_Waiting_Number" Style="{StaticResource buttonStyle}"/>
          
             </StackLayout>      
             </ScrollView>

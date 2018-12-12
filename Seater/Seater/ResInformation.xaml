@@ -4,13 +4,25 @@
              x:Class="Seater.ResInformation">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <Label Text="Reservation Details" TextColor="Red" FontSize="24" Style="Italic" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <Entry Text="Name: " VerticalOptions="CenterAndExpand"/>
-            <Entry Text="Phone#: " VerticalOptions="CenterAndExpand" />
-            <Entry Text="Occasion: " VerticalOptions="CenterAndExpand" />
-            <Entry Text="Special Note: " VerticalOptions="CenterAndExpand" />
-            <Button Text="Continue" Clicked="Button_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Margin="10,10,10,0">
+            
+                <Label Text="Reservation Details"
+                           VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="CarterOne.ttf#CarterOne" ></On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label Text="Name:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Entry/>
+                <Label Text="Phone#:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Entry/>
+                <Label Text="Occasion:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Entry/>
+                <Label Text="Special Note:" Style="Italic" FontSize="Large"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <Entry/>
+                <Button Text="Continue" Clicked="Button_Clicked" Style="{StaticResource buttonStyle}"/>
                
             </StackLayout>
             </ScrollView>

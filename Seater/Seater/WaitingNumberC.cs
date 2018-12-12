@@ -4,9 +4,9 @@ using Xamarin.Forms;
 
 namespace Seater
 {
-    public class WaitingNumber : ContentPage
+    public class WaitingNumberC : ContentPage
     {
-        public WaitingNumber()
+        public WaitingNumberC()
         {
             Content = new StackLayout
             {

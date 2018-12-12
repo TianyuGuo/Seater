@@ -51,4 +51,58 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CalendarPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ConfirmationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ConfirmationTwo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ForgotPasswordPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="FutureOptionPage2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="InformationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LoginDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LoginMaster.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="OptionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ProfilePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ReservationPage1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ReservationPage2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="SearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="SignUpPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="WaitingNumber.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
 </Project>
